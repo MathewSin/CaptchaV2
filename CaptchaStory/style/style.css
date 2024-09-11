@@ -1,8 +1,20 @@
+html, body {
+    height: 100%; /* Make html and body full height */
+    margin: 0; /* Remove default margin */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
     text-align: center;
-    padding: 20px;
+    background-image: url('farm.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; /* Adjust the size of the background image */
+    background-position: center;
+    height: 100vh; /* Use full viewport height */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .captcha-container {
@@ -11,7 +23,6 @@ body {
     border-radius: 10px;
     padding: 20px;
     max-width: 400px;
-    margin: 0 auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 

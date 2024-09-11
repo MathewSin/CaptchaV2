@@ -8,15 +8,18 @@
 </head>
 <body>
     <div class="captcha-container">
-        <h2>Mari kita bantu kelinci menemukan wortelnya!</h2> <!-- Pertanyaan awal -->
+        <h2>Mari kita bantu kelinci menemukan wortelnya!</h2>
         <p>Klik gambar yang sesuai untuk melanjutkan cerita.</p>
         <div class="story-container">
             <img src="../style/carrot.png" alt="wortel" class="captcha-image" id="carrot">
-            <img src="../style/apple.png" alt="apel" class="captcha-image">
-            <img src="../style/banana.png" alt="pisang" class="captcha-image">
+            <img src="../style/apple.png" alt="apel" class="captcha-image" id="apple">
+            <img src="../style/banana.png" alt="pisang" class="captcha-image" id="banana">
         </div>      
         <p id="response-message"></p>
     </div>
-    <script src="../js/backend.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/backends.js" defer></script>
+
 </body>
 </html>

@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAPTCHA Mode Cerita</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../style/loginstyle.css">
 </head>
 <body>
-    <div class="captcha-container">
-        <h2>Mari kita bantu kelinci menemukan wortelnya!</h2>
-        <p>Klik gambar yang sesuai untuk melanjutkan cerita.</p>
-        <div class="story-container">
-            <img src="../style/carrot.png" alt="wortel" class="captcha-image" id="carrot">
-            <img src="../style/apple.png" alt="apel" class="captcha-image" id="apple">
-            <img src="../style/banana.png" alt="pisang" class="captcha-image" id="banana">
-        </div>      
-        <p id="response-message"></p>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="validateLogin(event)">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        
+        <p id="error-message"></p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/backend.js" defer></script>
-
+    <script src="../js/login.js"></script>
 </body>
 </html>
